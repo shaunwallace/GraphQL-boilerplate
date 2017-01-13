@@ -12,3 +12,8 @@ script:
     - npm test
     - npm lint
     - npm build
+env:
+    - NODE_ENV=production
+before_deploy:
+    - test $TRAVIS_TEST_RESULT = 0 \# check that build passed successfully
+    && npm run build
