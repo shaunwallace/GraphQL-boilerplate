@@ -1,3 +1,7 @@
+<p align="center">
+[![Build Status](https://travis-ci.org/shaunwallace/GraphQL-boilerplate.svg?branch=master)](https://travis-ci.org/shaunwallace/GraphQL-boilerplate)
+</p>
+
 # GraphQL Boilerplate
 
 One Paragraph of project description goes here
