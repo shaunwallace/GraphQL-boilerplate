@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --inline --hot",
     "test": "jest",
-    "lint": "$(npm bin)/eslint ./src/** -f table --color",
+    "lint": "eslint ./src/** -f table --color",
     "build": "webpack --config webpack.config.js"
   },
   "repository": {
