@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "lint": "eslint \"src/**\"",
+    "lint": "eslint ./src/** -f table --color",
     "start": "webpack --config webpack.config.js"
   },
   "repository": {
