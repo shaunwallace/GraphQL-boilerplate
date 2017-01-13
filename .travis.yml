@@ -1,19 +1,18 @@
+---
+before_deploy:
+  - "test $TRAVIS_TEST_RESULT = 0 && npm run build"
+branches:
+  only:
+    - master
+env:
+  - NODE_ENV=production
+install:
+  - "npm install"
 language: node_js
 node_js:
-    - 6
-    - 5
-install:
-    - npm install
-# safelist
-branches:
-    only:
-        - master
+  - 6
+  - 5
 script:
-    - npm test
-    - npm lint
-    - npm build
-env:
-    - NODE_ENV=production
-before_deploy:
-    - test $TRAVIS_TEST_RESULT = 0 \# check that build passed successfully
-    && npm run build
+  - "npm test"
+  - "npm lint"
+  - "npm build"
