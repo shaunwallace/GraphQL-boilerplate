@@ -1,0 +1,41 @@
+{
+  "name": "graphql-boilerplate",
+  "version": "0.0.1",
+  "description": "Client-side graphpQL boilerplate using apollo",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint \"src/**\" -f",
+    "start": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaunwallace/GraphQL-boilerplate.git"
+  },
+  "keywords": [
+    "graphQL",
+    "boilerplate",
+    "node",
+    "apollo"
+  ],
+  "author": "Shaun Wallace",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shaunwallace/GraphQL-boilerplate/issues"
+  },
+  "homepage": "https://github.com/shaunwallace/GraphQL-boilerplate#readme",
+  "devDependencies": {
+    "jest": "^18.1.0",
+    "precommit-hook": "^3.0.0",
+    "webpack": "^1.14.0"
+  },
+  "dependencies": {
+    "apollo-client": "^0.7.2",
+    "graphql-tag": "^1.2.2"
+  },
+  "pre-commit": [
+    "lint",
+    "validate",
+    "test"
+  ]
+}
