@@ -1,8 +1,6 @@
-<p align="center">
-[BuildStatus](https://travis-ci.org/shaunwallace/GraphQL-boilerplate.svg?branch=master)
-</p>
-
 # GraphQL Boilerplate
+
+[![build status][travis-image]][travis-url]
 
 One Paragraph of project description goes here
 
@@ -91,3 +89,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Hat tip to anyone who's code was used
 * Inspiration
 * etc
+
+
+[travis-image]:https://travis-ci.org/shaunwallace/GraphQL-boilerplate.svg?branch=master?style=flat-square
+[travis-url]: https://travis-ci.org/shaunwallace/GraphQL-boilerplate
