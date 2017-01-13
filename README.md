@@ -74,7 +74,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **John Doe** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Shaun Wallace** - *Initial work* - [github](https://github.com/shaunwallace)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
