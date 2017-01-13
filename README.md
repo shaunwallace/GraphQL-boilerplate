@@ -1,6 +1,5 @@
 # GraphQL Boilerplate
-
-[![build status][travis-image]][travis-url]
+[![Build Status][travis-image]][travis-url]
 
 One Paragraph of project description goes here
 
