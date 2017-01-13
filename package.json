@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "lint": "eslint \"src/**\" -f",
+    "lint": "eslint \"src/**\"",
     "start": "webpack --config webpack.config.js"
   },
   "repository": {
@@ -35,7 +35,6 @@
   },
   "pre-commit": [
     "lint",
-    "validate",
     "test"
   ]
 }
