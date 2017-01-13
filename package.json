@@ -25,17 +25,16 @@
     "url": "https://github.com/shaunwallace/GraphQL-boilerplate/issues"
   },
   "homepage": "https://github.com/shaunwallace/GraphQL-boilerplate#readme",
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
+    "apollo-client": "^0.7.2",
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
     "babel-preset-env": "^1.1.8",
     "html-webpack-plugin": "^2.26.0",
     "precommit-hook": "^3.0.0",
     "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.2"
-  },
-  "dependencies": {
-    "apollo-client": "^0.7.2",
+    "webpack-dev-server": "^1.16.2",
     "graphql-tag": "^1.2.2",
     "jest": "^18.1.0"
   },
