@@ -31,12 +31,13 @@
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
     "babel-preset-env": "^1.1.8",
+    "firebase": "^3.6.5",
+    "graphql-tag": "^1.2.2",
     "html-webpack-plugin": "^2.26.0",
+    "jest": "^18.1.0",
     "precommit-hook": "^3.0.0",
     "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.2",
-    "graphql-tag": "^1.2.2",
-    "jest": "^18.1.0"
+    "webpack-dev-server": "^1.16.2"
   },
   "pre-commit": [
     "lint",

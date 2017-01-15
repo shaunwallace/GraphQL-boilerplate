@@ -4,7 +4,7 @@ const webpack = require('webpack');
 
 const BUILD_TARGET = process.env.npm_lifecycle_event;
 const paths = {
-    build: path.join(__dirname, 'dist'),
+    build: path.join(__dirname, 'public'),
     entry: path.join(__dirname, 'src/index.js'),
 };
 
