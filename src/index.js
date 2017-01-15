@@ -2,11 +2,11 @@ import firebase from 'firebase/app';
 
 // Initialize Firebase
 const config = {
-    apiKey: 'AIzaSyCLOjuSbemQu8rau1pcobAXIsj2qxT8ptU',
-    authDomain: 'graphql-demo.firebaseapp.com',
-    databaseURL: 'https://graphql-demo.firebaseio.com',
-    storageBucket: 'graphql-demo.appspot.com',
-    messagingSenderId: '120344359586',
+    apiKey: 'AIzaSyBhQTKWSGBut_C8DcyBxfSRQfdhUSwiXoA',
+    authDomain: 'graphql-demo-90e3b.firebaseapp.com',
+    databaseURL: 'https://graphql-demo-90e3b.firebaseio.com',
+    storageBucket: 'graphql-demo-90e3b.appspot.com',
+    messagingSenderId: '245816159988',
 };
 
 firebase.initializeApp(config);
