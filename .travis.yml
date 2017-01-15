@@ -1,6 +1,6 @@
 before_deploy:
 - test $TRAVIS_TEST_RESULT = 0 && npm run build
-- firebase deploy --email ${FIREBASE_USERNAME} --password ${FIREBASE_PASSWORD}
+- firebase deploy --only hosting --token=${FIREBASE_API_TOKEN}
 branches:
   only:
   - master
@@ -14,9 +14,9 @@ node_js:
 - 6
 script:
 - npm test
-deploy:
-  provider: heroku
-  app: graphql-boilerplate
-  skip_cleanup: true
-  api_key:
-    secure: ${HEROKU_API_KEY}
+#deploy:
+ # provider: heroku
+ # app: graphql-boilerplate
+ # skip_cleanup: true
+ # api_key:
+ #   secure: ${HEROKU_API_KEY}
