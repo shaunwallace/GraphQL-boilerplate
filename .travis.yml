@@ -14,3 +14,7 @@ node_js:
 script:
   - "npm test"
   - "npm run build"
+deploy:
+  provider: heroku
+  api_key:
+    secure: "9ef27f06-5228-496f-9fc4-6db8d184f89d"
