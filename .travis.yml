@@ -1,20 +1,20 @@
----
 before_deploy:
-  - "test $TRAVIS_TEST_RESULT = 0 && npm run build"
+- test $TRAVIS_TEST_RESULT = 0 && npm run build
 branches:
   only:
-    - master
+  - master
 env:
-  - NODE_ENV=production
+- NODE_ENV=production
 install:
-  - "npm install"
+- npm install
 language: node_js
 node_js:
-  - 6
+- 6
 script:
-  - "npm test"
-  - "npm run build"
+- npm test
 deploy:
   provider: heroku
+  app: graphql-boilerplate
+  skip_cleanup: true
   api_key:
-    secure: "9ef27f06-5228-496f-9fc4-6db8d184f89d"
+    secure: far1oJp5PgWGgXfTqUsgjXHIGOP6ujZGK1NXVrA8d4PUt2D4AnXOyWAL06uoBCneKl8xVaymG8JoymuczQivalROd9BxPS71CR49qtrAeq5gcimTThHy2FOL1UDwW6KmJhW54IxA2OpPe3GHJsBHCCA0DLTB4vGhrJAWBzTwKvBWzS9DbyF8UMKqVqErbLo6LXnWuG/YfWtLvytPqx7csGqE+BmRBnIEWmXrJy/N+B5o4cOimgFbXkzqzr4uhixNYsTWvzGrWtHaZwO63mg58yD+NV6wcoz7CQQmDdHEgkgxkSTSgF+dPXiyroMknDLksvEPD19BYJeJmAwP+EcEHogscW5qPEpBLinFT/BxOLxWkw25DelmWdHYD4fmzWgD1Bncx6O/d43FwG72KAlgK7K+u6CtEhlVa4FzYsOnw7/CO9NyLhU4jWj9kvFKspLc4F47EgP9joQKpEbx1ER2JDAJ7tFeKVlybivj6y9Sq+edrhuethGt7bkAefqoqYapGcBEb3ckTXPK7R6915FMWoV9ss8p+HOBx5OknHJ7Eg1jj8mL7dE68rmnM5DXjz1MTcB5b+OXDulSvk4wSCQPvyXUE9VEXRxKS55eeeO3tyZDoR3e8/n44w+NAyonhBJooEPKp9+Kcz4ji9MT3fHm/s3druxioc9ogET1GBjKFhs=
