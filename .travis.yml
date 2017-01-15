@@ -1,6 +1,7 @@
 before_deploy:
-- test $TRAVIS_TEST_RESULT = 0 && npm run build
+- test $TRAVIS_TEST_RESULT = 0
 after_success:
+  - npm run build
   - firebase deploy --token ${FIREBASE_API_TOKEN}
 branches:
   only:
