@@ -1,7 +1,0 @@
-project_name:
-  build:
-    image: shaunwallace/graphql-boilerplate
-    dockerfile: Dockerfile
-  # Set environment variables to connect to the service you need for your build. Those environment variables can overwrite settings from your configuration files (e.g. database.yml) if configured. Make sure that your environment variables and configuration files work work together as expected.
-  environment:
-    - NODE_ENV=production
