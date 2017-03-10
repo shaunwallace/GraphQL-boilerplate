@@ -1,0 +1,5 @@
+- name: ci
+  type: parallel
+  steps:
+  - service: graphql-boilerplate
+    command: npm test

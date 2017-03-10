@@ -1,0 +1,12 @@
+project_name:
+  build:
+    image: shaunwallace/graphql-boilerplate
+  # Linking Redis and Postgres into the container
+  links:
+    - redis
+  # Set environment variables to connect to the service you need for your build. Those environment variables can overwrite settings from your configuration files (e.g. database.yml) if configured. Make sure that your environment variables and configuration files work work together as expected.
+  environment:
+    - NODE_ENV=production
+# Service definition that specify a version of the service through container tags
+redis:
+  image: redis:2.8
