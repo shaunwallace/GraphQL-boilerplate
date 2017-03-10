@@ -51,7 +51,7 @@ const common = {
     output: {
         path: paths.build,
         publicPath: '',
-        filename: 'app.bundle.js',
+        filename: '[name].[hash].js',
     },
     resolve: {
         extensions: ['', '.js'],
